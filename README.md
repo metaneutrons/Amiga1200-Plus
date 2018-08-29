@@ -1,3 +1,4 @@
+![Scheme](https://mirrors.creativecommons.org/presskit/icons/cc.svg)
 # Amiga 1200+
 
 ## About
