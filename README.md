@@ -16,10 +16,9 @@ I made some changes and enhancements to the original schematics.
     * 5 Volts: main power rail 5 Amp capable
     * 12 Volts: 1 Amp capable
     * 3.3 Volts: 0.5 Amp capable (for daughter boards)
-    * 1.2 Volts: 0.5 Amp capable (for daughter boards)
 * two PC standard 3 Pin fan headers are added to the board.
 * Terrible Fire compatible SPI port for network chip
-* Extension board connector for mouse/joystick. (one is in development that has USB Mouse and two classic DB-9 connectors and autoswitches when fire button is pressed)
+* Extension board connector for mouse/joystick/uSD Card/SPI Network. (one is in development that has USB Mouse and two classic DB-9 connectors and autoswitches when fire button is pressed)
 
 ## License
 
