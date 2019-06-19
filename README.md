@@ -1,4 +1,4 @@
-![Scheme](https://mirrors.creativecommons.org/presskit/icons/cc.svg)
+![Scheme](https://i1.wp.com/www.oshwa.org/wp-content/uploads/2014/03/oshw-logo-400-px.png)
 # Amiga 1200+
 
 ## About
@@ -21,6 +21,7 @@ I made some changes and enhancements to the original schematics.
 * Extension board connector for Mouse/Joystick/Network/FlashFloppy. (one is in development that has USB Mouse and two classic DB-9 connectors and autoswitches when fire button is pressed + ethernet)
 
 ## License
+![Scheme](https://mirrors.creativecommons.org/presskit/icons/cc.svg)
 
 This project is licensed by a Creative Commons license; You are welcome (and encouraged!) to extend, re-spin and otherwise use and modify the design as allowed by the license. - see  [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/) for details
 
