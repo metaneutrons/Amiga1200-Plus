@@ -8,7 +8,7 @@ I made some changes and enhancements to the original schematics.
 
 ## Features
 
-* All Original AA chips are needed and can be put into the sockets. These include Lisa, Paula, Alice, The two CIA chips and the Keyboard controller.
+* All Original AA chips are needed and can be put into the sockets. These include Lisa, Paula, Alice and the two CIA chips.
 * The CPU is removed, you need some accellerator board to run this board.
 * The DRAM has been removed and the functionality has been moved to a daughterboard.
 * Video output has been moved to a seperate output board. This board get all Lisa output signals and also all the typical Zorro signals. This means that an RTG card can be developed.
@@ -19,6 +19,9 @@ I made some changes and enhancements to the original schematics.
 * two PC standard 3 Pin fan headers are added to the board.
 * A non-volatile digipot has been added in the audio path, this allows you to set the stereo separation.
 * Extension board connector for Mouse/Joystick/Network/FlashFloppy. (one is in development that has USB Mouse and two classic DB-9 connectors and autoswitches when fire button is pressed + ethernet)
+* Replaced the keyboard controller by a modern MCU
+* Dual ROM switcher
+* DF0/DF1 Bootselector
 
 ## License
 ![Scheme](https://mirrors.creativecommons.org/presskit/icons/cc.svg)
