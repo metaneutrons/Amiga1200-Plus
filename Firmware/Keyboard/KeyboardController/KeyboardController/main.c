@@ -8,20 +8,23 @@ int main(void)
 {
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
-	amikb_init();
+	
 
+	//boot from DF0:
 	__BootFromDF0___set_level(true);
+	//boot from DF1:
+	//__BootFromDF0___set_level(false);
 
 	//keep keyboard reset line low for another 400ms
 	CapsLockLed_set_level(false);
 	KB_RESET_set_level(false);
-	_delay_ms(400);
+	_delay_ms(600);
 	
 	keyscan_init();
+	amikb_init();
 
 	KB_RESET_set_level(true); //release keyboard reset
 	CapsLockLed_set_level(true);
-
 
 	while (1) 
 	{

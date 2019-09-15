@@ -10,8 +10,19 @@
 
 void (*XDDRArray[6]) (const enum port_dir dir);
 bool (*YInputArray[15]) ();
-uint8_t keycodes[6][15];
-bool prevkeystates[6][15];
+
+//see http://amigadev.elowar.com/read/ADCD_2.1/Hardware_Manual_guide/node017A.html
+const uint8_t keycodes[6][15] =
+{
+	{0x5F, 0x59, 0x58, 0x57, 0x56, 0x5C, 0x55, 0x5B, 0x54, 0x53, 0x52, 0x51, 0x50, 0x5A, 0x45},
+	{0x4C, 0x0D, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00},
+	{0x4F, 0x44, 0x1B, 0x1A, 0x19, 0x18, 0x17, 0x16, 0x15, 0x14, 0X13, 0x12, 0x11, 0x10, 0x42},
+	{0x4E, 0x46, 0x2B, 0x2A, 0x29, 0x28, 0x27, 0x26, 0x25, 0X24, 0x23, 0x22, 0x21, 0x20, 0x62},
+	{0x4D, 0x41, 0x40, 0x3B, 0x3A, 0x39, 0x38, 0x37, 0x36, 0x35, 0X34, 0x33, 0x32, 0x31, 0x30},
+	{0x4A, 0x0F, 0x1D, 0x2D, 0x3D, 0x43, 0x1E, 0x2E, 0x3E, 0x3C, 0x1F, 0x2F, 0x3F, 0x5E, 0x5D}
+};
+
+uint8_t prevkeystates[6][15];
 int currentX;
 
 void keyscan_init()
@@ -39,38 +50,6 @@ void keyscan_init()
 	YInputArray[13] = Y13_get_level;
 	YInputArray[14] = Y14_get_level;
 
-	keycodes[0][0] = 0x5F; //HELP
-	keycodes[0][1] = 0x59; //F10
-	keycodes[0][2] = 0x58; //F9
-	keycodes[0][3] = 0x57; //F8
-	keycodes[0][4] = 0x56; //F7
-	keycodes[0][5] = 0x5C; // /
-	keycodes[0][6] = 0x55; //F6
-	keycodes[0][7] = 0x5B; // )
-	keycodes[0][8] = 0x54; //F5
-	keycodes[0][9] = 0x53; //F4
-	keycodes[0][10] = 0x52; //F3
-	keycodes[0][11] = 0x51; //F2
-	keycodes[0][12] = 0x50; //F1
-	keycodes[0][13] = 0x5A; // (
-	keycodes[0][14] = 0x45; //ESC
-
-	keycodes[1][0] = 0x4C; //CURS UP
-	keycodes[1][1] = 0x0D; // |
-	keycodes[1][2] = 0x0C; // +=
-	keycodes[1][3] = 0x0B; // _-
-	keycodes[1][4] = 0x0A; // 0
-	keycodes[1][5] = 0x09; // 9
-	keycodes[1][6] = 0x08; // 8
-	keycodes[1][7] = 0x07; // 7
-	keycodes[1][8] = 0x06; // 6
-	keycodes[1][9] = 0x05; // 5
-	keycodes[1][10] = 0x04; // 4
-	keycodes[1][11] = 0x03; // 3
-	keycodes[1][12] = 0x02; // 2
-	keycodes[1][13] = 0x01; // 1
-	keycodes[1][14] = 0x00; // ~
-
 	for (int x = 0; x < 6; x++)
 	{
 		for (int y = 0; y < 15; y++)
@@ -78,36 +57,56 @@ void keyscan_init()
 			prevkeystates[x][y] = false;
 		}
 	}
-
 	currentX = 0;
+}
 
+static inline bool isStable(uint8_t switchData)
+{
+	if (switchData == 255) return true;
+	if (switchData == 0) return true;
+	return false;
 }
 
 int scankeys()
 {
 	while (1)
 	{
-	   _delay_us(166);
-	   for (int y = 0; y < 15; y++)
-	   {
-	        bool temp = !YInputArray[y]();
-			if (temp != prevkeystates[currentX][y])
-			{
-				prevkeystates[currentX][y] = temp;
-				uint8_t tempscancode = keycodes[currentX][y];
-				if (temp)
-				{
-				  tempscancode |= 0x80; //set bit 7 to one , indicating key pressed
-				}
-				return tempscancode;
-			}
-	   }
-	   XDDRArray[currentX](PORT_DIR_IN);
-	   currentX++;
-	   if (currentX > 5)
-	   {
+		XDDRArray[currentX](PORT_DIR_IN);
+		currentX++;
+		if (currentX > 5)
+		{
 			currentX = 0;
-	   }		
-	   XDDRArray[currentX](PORT_DIR_OUT);
+		}
+		XDDRArray[currentX](PORT_DIR_OUT);
+		_delay_us(25);
+		for (int y = 0; y < 15; y++)
+		{
+			bool temp = !YInputArray[y]();
+			if (isStable(prevkeystates[currentX][y]))
+			{
+				if (temp != prevkeystates[currentX][y])
+				{
+					prevkeystates[currentX][y] = 170; // 10101010
+					uint8_t tempscancode = keycodes[currentX][y];
+					if (temp)
+					{
+						tempscancode |= 0x80; //set bit 7 to one , indicating key pressed
+					}
+					return tempscancode;
+				}
+			}
+			else
+			{
+			  if (temp)
+			  {
+				prevkeystates[currentX][y] = (prevkeystates[currentX][y] << 1) | 1;
+			  }
+			  else
+			  {
+			    prevkeystates[currentX][y] = (prevkeystates[currentX][y] << 1);
+			  }
+			  
+			}
+		}
 	}
 }
