@@ -1,0 +1,314 @@
+format_version: '2'
+name: A1200PlusKeyboardController
+versions:
+  api: '1.0'
+  backend: 1.6.148
+  commit: 605f106ab95776472e3febf2fac2471441fb1816
+  content: 1.0.1600
+  content_pack_name: acme-packs-all
+  format: '2'
+  frontend: 1.6.1881
+board:
+  identifier: CustomBoard
+  device: ATmega169PA-AN
+details: null
+application: null
+middlewares: {}
+drivers:
+  CPU:
+    user_label: CPU
+    definition: 'Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::CPU::driver_config_definition::SYSCTRL::Drivers:SYSCTRL:'
+    functionality: System
+    api: 'Drivers:SYSCTRL:'
+    configuration:
+      async_input_speed: 32768
+      clkadc_oscillator: Input clock
+      clkasy_oscillator: Async input clock
+      clkcpu_oscillator: Input clock
+      clkio_oscillator: Input clock
+      clkptc_oscillator: Input clock
+      cpu_clock_source: CLKcpu
+      cpu_sreg_i: false
+      enable_async_input: true
+      enable_clkadc: true
+      enable_clkasy: true
+      enable_clkcpu: true
+      enable_clkio: true
+      enable_clkptc: true
+      enable_core_clock: true
+      enable_input: true
+      input_speed: 8000000
+      pm_ivsel: Interrupt vector placed at the beginning of main FLASH memory
+      pm_pud: false
+      pm_se: false
+      pm_sm: Idle
+      prescaler_divider: '1'
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: Core
+          input: Core
+          external: false
+          external_frequency: 0
+        configuration: {}
+pads:
+  __BootFromDF0__:
+    name: PE2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PE2
+    mode: Digital output
+    user_label: __BootFromDF0__
+    configuration: null
+  __BootFromROM0__:
+    name: PE3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PE3
+    mode: Digital output
+    user_label: __BootFromROM0__
+    configuration: null
+  I2C_SCL:
+    name: PE4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PE4
+    mode: Peripheral IO
+    user_label: I2C_SCL
+    configuration: null
+  I2C_SDA:
+    name: PE5
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PE5
+    mode: Peripheral IO
+    user_label: I2C_SDA
+    configuration: null
+  X2:
+    name: PB0
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB0
+    mode: Digital output
+    user_label: X2
+    configuration: null
+  RALT:
+    name: PB1
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB1
+    mode: Digital input
+    user_label: RALT
+    configuration:
+      pad_pull_config: Pull-up
+  RAMI:
+    name: PB2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB2
+    mode: Digital input
+    user_label: RAMI
+    configuration:
+      pad_pull_config: Pull-up
+  CTRL:
+    name: PB3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB3
+    mode: Digital input
+    user_label: CTRL
+    configuration:
+      pad_pull_config: Pull-up
+  LSHF:
+    name: PB4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB4
+    mode: Digital input
+    user_label: LSHF
+    configuration:
+      pad_pull_config: Pull-up
+  LALT:
+    name: PB5
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB5
+    mode: Digital input
+    user_label: LALT
+    configuration:
+      pad_pull_config: Pull-up
+  LAMI:
+    name: PB6
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB6
+    mode: Digital input
+    user_label: LAMI
+    configuration:
+      pad_pull_config: Pull-up
+  CapsLockLed:
+    name: PB7
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PB7
+    mode: Digital output
+    user_label: CapsLockLed
+    configuration: null
+  KB_CLOCK:
+    name: PD0
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PD0
+    mode: Digital output
+    user_label: KB_CLOCK
+    configuration: null
+  KB_DATA:
+    name: PD1
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PD1
+    mode: Digital output
+    user_label: KB_DATA
+    configuration: null
+  KB_DATA_IN:
+    name: PD2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PD2
+    mode: Digital input
+    user_label: KB_DATA_IN
+    configuration: null
+  KB_RESET:
+    name: PD3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PD3
+    mode: Digital output
+    user_label: KB_RESET
+    configuration: null
+  KB_RESET_INPUT:
+    name: PD4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PD4
+    mode: Digital input
+    user_label: KB_RESET_INPUT
+    configuration: null
+  Y0:
+    name: PC0
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC0
+    mode: Digital input
+    user_label: Y0
+    configuration:
+      pad_pull_config: Pull-up
+  Y1:
+    name: PC1
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC1
+    mode: Digital input
+    user_label: Y1
+    configuration:
+      pad_pull_config: Pull-up
+  Y2:
+    name: PC2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC2
+    mode: Digital input
+    user_label: Y2
+    configuration:
+      pad_pull_config: Pull-up
+  Y3:
+    name: PC3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC3
+    mode: Digital input
+    user_label: Y3
+    configuration:
+      pad_pull_config: Pull-up
+  Y4:
+    name: PC4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC4
+    mode: Digital input
+    user_label: Y4
+    configuration:
+      pad_pull_config: Pull-up
+  Y5:
+    name: PC5
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC5
+    mode: Digital input
+    user_label: Y5
+    configuration:
+      pad_pull_config: Pull-up
+  Y6:
+    name: PC6
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC6
+    mode: Digital input
+    user_label: Y6
+    configuration:
+      pad_pull_config: Pull-up
+  Y7:
+    name: PC7
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PC7
+    mode: Digital input
+    user_label: Y7
+    configuration:
+      pad_pull_config: Pull-up
+  Y14:
+    name: PA6
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA6
+    mode: Digital input
+    user_label: Y14
+    configuration:
+      pad_pull_config: Pull-up
+  Y13:
+    name: PA5
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA5
+    mode: Digital input
+    user_label: Y13
+    configuration:
+      pad_pull_config: Pull-up
+  Y12:
+    name: PA4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA4
+    mode: Digital input
+    user_label: Y12
+    configuration:
+      pad_pull_config: Pull-up
+  Y11:
+    name: PA3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA3
+    mode: Digital input
+    user_label: Y11
+    configuration:
+      pad_pull_config: Pull-up
+  Y10:
+    name: PA2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA2
+    mode: Digital input
+    user_label: Y10
+    configuration:
+      pad_pull_config: Pull-up
+  Y9:
+    name: PA1
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA1
+    mode: Digital input
+    user_label: Y9
+    configuration:
+      pad_pull_config: Pull-up
+  Y8:
+    name: PA0
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PA0
+    mode: Digital input
+    user_label: Y8
+    configuration:
+      pad_pull_config: Pull-up
+  X7:
+    name: PF5
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF5
+    mode: Digital output
+    user_label: X7
+    configuration: null
+  X6:
+    name: PF4
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF4
+    mode: Digital output
+    user_label: X6
+    configuration: null
+  X5:
+    name: PF3
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF3
+    mode: Digital output
+    user_label: X5
+    configuration: null
+  X4:
+    name: PF2
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF2
+    mode: Digital output
+    user_label: X4
+    configuration: null
+  X3:
+    name: PF1
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF1
+    mode: Digital output
+    user_label: X3
+    configuration: null
+  RSHF:
+    name: PF0
+    definition: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::pad::PF0
+    mode: Digital input
+    user_label: RSHF
+    configuration:
+      pad_pull_config: Pull-up
+toolchain_options:
+- definition:
+    identifier: Atmel:ATMega169_329_649_drivers:1.0.0::ATmega169PA-AN::environment_definition::All:Atmel.Studio:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''
