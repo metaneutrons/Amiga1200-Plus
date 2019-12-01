@@ -370,3 +370,23 @@ Security Copy of*
 
 #User Specific Files
 *.atsuo
+
+*.csv
+
+*.txt
+
+*.dxf
+
+*.gbr
+
+A1200PlusBackplate_A_rev0_Gerbers.zip
+
+JoyStickExpansion/A1200\+JoyStickExpansion-21092019.pcb
+
+JoyStickExpansion/A1200\+JoyStickExpansion.pdf
+
+*.drl
+
+RamExpansion/RamBo 1Mx4/RamBo 1Mx4.pdf
+
+VideoExpansion/SimpleRGBBoard/Test.zip

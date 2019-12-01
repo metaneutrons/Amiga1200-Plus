@@ -12,6 +12,7 @@
 
 void keyscan_init();
 int scankeys();
+bool getResetState();
 
 
 #endif /* KEY_SCAN_H_ */

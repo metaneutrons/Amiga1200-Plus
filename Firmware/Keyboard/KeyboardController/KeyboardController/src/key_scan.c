@@ -8,6 +8,7 @@
 #include <atmel_start.h>
 #include <util/delay.h>
 
+
 void (*XDDRArray[6]) (const enum port_dir dir);
 bool (*YInputArray[15]) ();
 
@@ -22,8 +23,20 @@ const uint8_t keycodes[6][15] =
 	{0x4A, 0x0F, 0x1D, 0x2D, 0x3D, 0x43, 0x1E, 0x2E, 0x3E, 0x3C, 0x1F, 0x2F, 0x3F, 0x5E, 0x5D}
 };
 
-uint8_t prevkeystates[6][15];
+bool prevkeystates[6][15];
+bool prevLeftAmiga = false;
+bool prevLeftAlt = false;
+bool prevLeftShift = false;
+bool prevCTRL = false;
+bool prevRightAmiga = false;
+bool prevRightAlt = false;
+bool prevRightShift = false;
 int currentX;
+
+bool getResetState()
+{
+  return !prevLeftAmiga && !prevRightAmiga && !prevCTRL;
+}
 
 void keyscan_init()
 {
@@ -60,53 +73,88 @@ void keyscan_init()
 	currentX = 0;
 }
 
-static inline bool isStable(uint8_t switchData)
-{
-	if (switchData == 255) return true;
-	if (switchData == 0) return true;
-	return false;
-}
-
 int scankeys()
 {
+
+  //while(1)
+  //{
+    //X2_set_dir(PORT_DIR_OUT);
+	//X3_set_dir(PORT_DIR_OUT);
+	//X4_set_dir(PORT_DIR_OUT);
+	//X5_set_dir(PORT_DIR_OUT);
+	//X6_set_level(false);
+	//X6_set_dir(PORT_DIR_OUT);
+	//X7_set_dir(PORT_DIR_OUT);
+	//PORTF = 0;
+	//DDRF = 255;
+	//CapsLockLed_set_level(Y1_get_level());
+  //}
+   
 	while (1)
 	{
 		XDDRArray[currentX](PORT_DIR_IN);
 		currentX++;
-		if (currentX > 5)
-		{
-			currentX = 0;
-		}
+		if (currentX > 5) currentX = 0;
 		XDDRArray[currentX](PORT_DIR_OUT);
-		_delay_us(25);
+		_delay_us(600);
 		for (int y = 0; y < 15; y++)
 		{
 			bool temp = !YInputArray[y]();
-			if (isStable(prevkeystates[currentX][y]))
+			if (temp != prevkeystates[currentX][y])
 			{
-				if (temp != prevkeystates[currentX][y])
+
+				prevkeystates[currentX][y] = temp;
+				uint8_t tempscancode = keycodes[currentX][y];
+				//uint8_t tempscancode = 0x36;
+				if (temp) 
 				{
-					prevkeystates[currentX][y] = 170; // 10101010
-					uint8_t tempscancode = keycodes[currentX][y];
-					if (temp)
-					{
-						tempscancode |= 0x80; //set bit 7 to one , indicating key pressed
-					}
-					return tempscancode;
+					tempscancode |= 0x80; //set bit 7 to one , indicating key pressed
 				}
+				return tempscancode;
 			}
-			else
-			{
-			  if (temp)
-			  {
-				prevkeystates[currentX][y] = (prevkeystates[currentX][y] << 1) | 1;
-			  }
-			  else
-			  {
-			    prevkeystates[currentX][y] = (prevkeystates[currentX][y] << 1);
-			  }
-			  
-			}
+
+			//(Bit 6) (Bit 5) (Bit 4) (Bit 3) (Bit 2) (Bit 1) (Bit 0)
+			//+-------+-------+-------+-------+-------+-------+-------+
+			//| LEFT  | LEFT  | LEFT  | CTRL  | RIGHT | RIGHT | RIGHT |
+			//| AMIGA | ALT   | SHIFT |       | AMIGA |  ALT  | SHIFT |
+			//| (66)  | (64)  | (60)  | (63)  | (67)  | (65)  | (61)  |
+			//+-------+-------+-------+-------+-------+-------+-------+
+
+		}
+		if(LAMI_get_level() != prevLeftAmiga)
+		{
+			prevLeftAmiga = LAMI_get_level();
+			return (!prevLeftAmiga ? 0x66 | 0x80 : 0x66);
+		}
+		if(RAMI_get_level() != prevRightAmiga)
+		{
+			prevRightAmiga = RAMI_get_level();
+			return (!prevRightAmiga ? 0x67 | 0x80 : 0x67);
+		}
+		if(LALT_get_level() != prevLeftAlt)
+		{
+			prevLeftAlt = LALT_get_level();
+			return (!prevLeftAlt ? 0x64 | 0x80 : 0x64);
+		}
+		if(LSHF_get_level() != prevLeftShift)
+		{
+			prevLeftShift = LSHF_get_level();
+			return (!prevLeftShift ? 0x60 | 0x80 : 0x60);
+		}
+		if(CTRL_get_level() != prevCTRL)
+		{
+			prevCTRL = CTRL_get_level();
+			return (!prevCTRL ? 0x63 | 0x80 : 0x63);
+		}
+		if(RALT_get_level() != prevRightAlt)
+		{
+			prevRightAlt = CTRL_get_level();
+			return (!prevRightAlt ? 0x65 | 0x80 : 0x65);
+		}
+		if(RSHF_get_level() != prevRightShift)
+		{
+			prevRightShift = RSHF_get_level();
+			return (!prevRightShift ? 0x61 | 0x80 : 0x61);
 		}
 	}
 }
