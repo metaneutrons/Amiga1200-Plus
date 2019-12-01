@@ -1,0 +1,375 @@
+CAMPlot
+-------
+
+Report Written : 30/11/2019 12:57:55
+Design Path    : X:\Personal\Amiga1200Plus\A1200+.sch
+Design Title   : A1200+
+Created        : 26/06/2018 20:48:32
+Last Saved     : 6/10/2019 14:44:09
+Editing Time   : 21064 min
+
+Formatting Information
+----------------------
+
+    PDF Output
+    ----------
+
+    Pulsonix 10.5 Winplot.dll 7877
+
+Plot Details
+------------
+
+    PDF Output
+    ----------
+
+    Plot Name:       Clocks
+
+    Contains:        Clocks
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -153.039-    -195.898-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       I2C
+
+    Contains:        I2C
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -173.535+    -197.252+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Reset
+
+    Contains:        Reset
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -261.138+    -285.793+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Compact Flash / IDE
+
+    Contains:        Compact Flash / IDE
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -153.039-    -195.898-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Chip Memory
+
+    Contains:        Chip Memory
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -261.138+    -285.793+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Budgie
+
+    Contains:        Budgie
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -153.039-    -195.898-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Gayle / Gal
+
+    Contains:        Gayle / Gal
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -28.663-    -121.936-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Audio Filters
+
+    Contains:        Audio Filters
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -204.724-    -307.097-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Floppy
+
+    Contains:        Floppy
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -126.239+    -314.365+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Termination
+
+    Contains:        Termination
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -95.232+    -257.002-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Keyboard
+
+    Contains:        Keyboard
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -117.712+    -290.334-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       ODD CIA
+
+    Contains:        ODD CIA
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -92.131-    -304.336-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       EVEN CIA
+
+    Contains:        EVEN CIA
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -113.061+    -341.496+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Power
+
+    Contains:        Power
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -108.410+    -290.334-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       JoyStick Expansion / Clock Port
+
+    Contains:        JoyStick Expansion / Clock Port
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -86.705+    -267.079-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Paula
+
+    Contains:        Paula
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -155.695+    -285.683-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Roms
+
+    Contains:        Roms
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -98.332-    -269.405+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Expansion Port
+
+    Contains:        Expansion Port
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -212.476-    -371.049+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Video Board 2
+
+    Contains:        Video Board 2
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -0.000-    -258.205+mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Lisa
+
+    Contains:        Lisa
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -125.558-    -249.250-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       IC Power
+
+    Contains:        IC Power
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -138.811+    -304.336-mm
+    Step & Repeat:   Not used
+
+
+    PDF Output
+    ----------
+
+    Plot Name:       Alice
+
+    Contains:        Alice
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -23.241+    -232.581-mm
+    Step & Repeat:   Not used
+
+
+Summary Information
+-------------------
+
+    PDF Output
+    ----------
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -23.241+    -232.581-mm
+    Step & Repeat:   Not used
+
+
+
+
+    Outputs covered by CAM Plots
+    ----------------------------
+
+    Clocks: PDF, Artwork, Enabled
+    I2C: PDF, Artwork, Enabled
+    Reset: PDF, Artwork, Enabled
+    Compact Flash / IDE: PDF, Artwork, Enabled
+    Chip Memory: PDF, Artwork, Enabled
+    Budgie: PDF, Artwork, Enabled
+    Gayle / Gal: PDF, Artwork, Enabled
+    Audio Filters: PDF, Artwork, Enabled
+    Floppy: PDF, Artwork, Enabled
+    Termination: PDF, Artwork, Enabled
+    Keyboard: PDF, Artwork, Enabled
+    ODD CIA: PDF, Artwork, Enabled
+    EVEN CIA: PDF, Artwork, Enabled
+    Power: PDF, Artwork, Enabled
+    JoyStick Expansion / Clock Port: PDF, Artwork, Enabled
+    Paula: PDF, Artwork, Enabled
+    Roms: PDF, Artwork, Enabled
+    Expansion Port: PDF, Artwork, Enabled
+    Video Board 2: PDF, Artwork, Enabled
+    Lisa: PDF, Artwork, Enabled
+    IC Power: PDF, Artwork, Enabled
+    Alice: PDF, Artwork, Enabled
+
+    Outputs not covered by CAM Plots
+    --------------------------------
+
+
+                ---------------- End Of Report ----------------

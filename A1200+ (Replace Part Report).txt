@@ -1,0 +1,24 @@
+Replace Part Report
+-------------------
+
+Report Written : 6/10/2019 14:34:41
+Design Path    : X:\Personal\Amiga1200Plus\A1200+.sch
+Design Title   : A1200+
+Created        : 26/06/2018 20:48:32
+Last Saved     : 29/09/2019 12:27:12
+Editing Time   : 21053 min
+
+Replace Part:	6800pF/250V Ceramic 0805
+Footprint:	<Any Footprint>
+
+With Part:	3900pF/200V Ceramic 0805
+Footprint:	<Default Footprint>
+
+Replace matching components in the selection.
+
+The following components were replaced:
+---------------------------------------
+C40
+C30
+
+                ---------------- End Of Report ----------------

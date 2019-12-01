@@ -1,0 +1,175 @@
+CAMPlot
+-------
+
+Report Written : 6/09/2019 9:02:10
+Design Path    : X:\Personal\Amiga1200Plus\BackplateA.pcb
+Design Title   : 
+Created        : 5/09/2019 17:37:36
+Last Saved     : 6/09/2019 9:02:05
+Editing Time   : 354 min
+
+Formatting Information
+----------------------
+
+    Gerber Output
+    -------------
+
+    Pulsonix 10.0 Gerber.dll 7250
+    2.5 Format Absolute inches.
+    Omit Leading zeroes.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    Aperture table defined in output file (RS-274-X).
+
+    Excellon Drill Output
+    ---------------------
+
+    Pulsonix 10.0 NCDrill.dll 7244
+    2.5 Format Absolute Imperial.
+    Omit leading zeros
+    Tool sizes are in     thou
+
+
+Plot Details
+------------
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\Top.gbr
+    Plot Name:       Top
+
+    Contains:        Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D10      Round 0.150
+    D311      Round 5.000 Hole diameter 3.500
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\Top Solder Mask.gbr
+    Plot Name:       Top Solder Mask
+
+    Contains:        Top Solder Mask
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D312      Round 5.254
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\Silkscreen Top.gbr
+    Plot Name:       Silkscreen Top
+
+    Contains:        Silkscreen Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D86      Round 0.127
+    D88      Round 0.000+
+    D94      Round 0.000+
+    D241      Round 0.300
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\Contour.gbr
+    Plot Name:       Contour
+
+    Contains:        Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    No items output.
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\cut-outs.gbr
+    Plot Name:       cut-outs
+
+    Contains:        CutOuts
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D88      Round 0.000+
+    D119      Round 0.000+
+
+    Excellon Drill Output
+    ---------------------
+
+    Output File:     X:\Personal\Amiga1200Plus\Through Hole Plated.drl
+    Plot Name:       <Through Hole> Plated
+
+    Contains:        <Through Hole>         Plated
+
+    Drill Type:      Plated
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -865.292+    -784.425-mm
+    Step & Repeat:   Not used
+
+
+    Format     1
+    FMAT statement included in output.
+    Tool sizes included in output.
+
+    Tool          Size     Count  Plated
+
+    T001         00.13780    12     Y
+
+Summary Information
+-------------------
+
+    Outputs covered by CAM Plots
+    ----------------------------
+
+    Top: Gerber, Artwork, Enabled
+    Top Solder Mask: Gerber, Artwork, Enabled
+    Silkscreen Top: Gerber, Artwork, Enabled
+    <Through Hole> Plated: Excellon, Drill, Enabled
+    Contour: Gerber, Outline, Enabled
+    cut-outs: Gerber, Artwork, Enabled
+
+    Outputs not covered by CAM Plots
+    --------------------------------
+
+
+                ---------------- End Of Report ----------------

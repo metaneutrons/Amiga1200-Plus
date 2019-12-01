@@ -1,0 +1,18 @@
+Auto Insert Testpoints
+----------------------
+
+Report Written : 23/11/2019 12:07:58
+Design Path    : X:\Personal\Amiga1200Plus\A1200+.sch
+Design Title   : A1200+
+Created        : 26/06/2018 20:48:32
+Last Saved     : 6/10/2019 14:44:09
+Editing Time   : 21110 min
+
+
+Summary
+-------
+
+   0 net(s) missing testpoints
+   0 net(s) with extra testpoints
+
+                ---------------- End Of Report ----------------

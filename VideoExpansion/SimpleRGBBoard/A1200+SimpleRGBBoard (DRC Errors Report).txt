@@ -1,0 +1,46 @@
+DRC Errors Report
+-----------------
+
+Report Written : 21/09/2019 11:47:59
+Design Path    : X:\Personal\Amiga1200Plus\VideoExpansion\SimpleRGBBoard\A1200+SimpleRGBBoard.pcb
+Design Title   : 
+Created        : 5/06/2019 19:54:43
+Last Saved     : 21/09/2019 11:47:56
+Editing Time   : 632 min
+
+
+No errors found
+
+The following rules were not checked:
+    Spacing Rules:
+        Testpoint
+        Text
+        Component
+    All On Grid Rules
+    Manufacturing Rules:
+        Unreachable Testpoints
+        Minimum Probe Points
+        Split Plane Pad
+        Bond Wire Length
+        Wire Cross
+        Wire Under Component
+        Drill Backoff
+        Minimum Pad Land
+    Net Rules:
+        Single Pin Nets
+        Unfinished Track
+        Track Layer
+        Track Length
+        Connection Length
+        Connection Vias
+        Pin Order
+        Stub Via
+
+All acceptance rules were checked.
+
+No net class spacing rules defined.
+
+No net class pair rules defined.
+
+
+                ---------------- End Of Report ----------------

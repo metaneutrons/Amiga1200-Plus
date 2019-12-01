@@ -1,0 +1,46 @@
+DRC Errors Report
+-----------------
+
+Report Written : 22/09/2019 14:22:56
+Design Path    : X:\Personal\Amiga1200Plus\JoyStickExpansion\A1200+JoyStickExpansion.pcb
+Design Title   : 
+Created        : 9/06/2019 21:36:26
+Last Saved     : 22/09/2019 14:22:43
+Editing Time   : 2385 min
+
+
+No errors found
+
+The following rules were not checked:
+    Spacing Rules:
+        Testpoint
+        Text
+        Component
+    All On Grid Rules
+    Manufacturing Rules:
+        Unreachable Testpoints
+        Minimum Probe Points
+        Split Plane Pad
+        Bond Wire Length
+        Wire Cross
+        Wire Under Component
+        Drill Backoff
+        Minimum Pad Land
+    Net Rules:
+        Single Pin Nets
+        Unfinished Track
+        Track Layer
+        Track Length
+        Connection Length
+        Connection Vias
+        Pin Order
+        Stub Via
+
+All acceptance rules were checked.
+
+No net class spacing rules defined.
+
+No net class pair rules defined.
+
+
+                ---------------- End Of Report ----------------

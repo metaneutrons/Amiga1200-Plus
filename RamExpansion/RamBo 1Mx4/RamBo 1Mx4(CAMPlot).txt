@@ -1,0 +1,341 @@
+CAMPlot
+-------
+
+Report Written : 19/09/2019 10:44:43
+Design Path    : X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\RamBo 1Mx4.pcb
+Design Title   : 
+Created        : 8/06/2019 19:15:11
+Last Saved     : 19/09/2019 10:44:39
+Editing Time   : 422 min
+
+Formatting Information
+----------------------
+
+    Gerber Output
+    -------------
+
+    Pulsonix 10.0 Gerber.dll 7250
+    2.5 Format Absolute inches.
+    Omit Leading zeroes.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    Aperture table defined in output file (RS-274-X).
+
+    Excellon Drill Output
+    ---------------------
+
+    Pulsonix 10.0 NCDrill.dll 7244
+    2.5 Format Absolute Imperial.
+    Omit leading zeros
+    Tool sizes are in     thou
+
+
+Plot Details
+------------
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\L1 - Copper Top.GTL.gbr
+    Plot Name:       L1 - Copper Top.GTL
+
+    Contains:        Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D10      Round 0.150
+    D11      Round 0.600 Hole diameter 0.250
+    D17      Round 0.900 Hole diameter 0.300
+    D18      Rounded Rectangle 0.600 x 0.800
+    D19      Rounded Rectangle 0.600 x 0.650
+    D71      Rounded Rectangle 1.102+ x 1.402+
+    D22      Rounded Rectangle 1.102+ x 1.402+
+    D25      Rounded Rectangle 1.102+ x 1.402+ Rotation 90
+    D86      Round 0.127
+    D115      Round 0.152+
+    D122      Round 0.500
+    D126      Round 1.400
+    D129      Rounded Rectangle 0.600 x 0.800 Rotation 90
+    D130      Rounded Rectangle 0.600 x 0.650 Rotation 90
+    D140      Rounded Rectangle 0.600 x 2.700
+    D149      Round 0.200
+    D154      Round 6.000 Hole diameter 3.100
+    D174      Rounded Rectangle 0.500+ x 0.750+ Rotation 90
+    D218      Rounded Rectangle 0.550 x 2.200
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\L2 - Copper GND.G2L.gbr
+    Plot Name:       L2 - Copper GND.G2L
+
+    Contains:        GND
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D10      Round 0.150
+    D11      Round 0.600 Hole diameter 0.250
+    D17      Round 0.900 Hole diameter 0.300
+    D86      Round 0.127
+    D115      Round 0.152+
+    D126      Round 1.400
+    D154      Round 6.000 Hole diameter 3.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\L4 - Copper Bottom.GBL.gbr
+    Plot Name:       L4 - Copper Bottom.GBL
+
+    Contains:        Bottom
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D10      Round 0.150
+    D11      Round 0.600 Hole diameter 0.250
+    D17      Round 0.900 Hole diameter 0.300
+    D86      Round 0.127
+    D115      Round 0.152+
+    D126      Round 1.400
+    D149      Round 0.200
+    D154      Round 6.000 Hole diameter 3.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Silkscreen Top.GTO.gbr
+    Plot Name:       Silkscreen Top.GTO
+
+    Contains:        Silkscreen Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D86      Round 0.127
+    D89      Round 0.127
+    D92      Round 0.200
+    D117      Round 0.305-
+    D119      Round 0.000+
+    D138      Round 0.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Solder Mask Top.GTS.gbr
+    Plot Name:       Solder Mask Top.GTS
+
+    Contains:        Solder Mask Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D18      Rounded Rectangle 0.600 x 0.800
+    D19      Rounded Rectangle 0.600 x 0.650
+    D71      Rounded Rectangle 1.102+ x 1.402+
+    D22      Rounded Rectangle 1.102+ x 1.402+
+    D25      Rounded Rectangle 1.102+ x 1.402+ Rotation 90
+    D94      Round 0.000+
+    D120      Round 0.025+
+    D129      Rounded Rectangle 0.600 x 0.800 Rotation 90
+    D130      Rounded Rectangle 0.600 x 0.650 Rotation 90
+    D140      Rounded Rectangle 0.600 x 2.700
+    D154      Round 6.000 Hole diameter 3.100
+    D174      Rounded Rectangle 0.500+ x 0.750+ Rotation 90
+    D218      Rounded Rectangle 0.550 x 2.200
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Solder Mask Bottom.GBS.gbr
+    Plot Name:       Solder Mask Bottom.GBS
+
+    Contains:        Solder Mask Bottom
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D94      Round 0.000+
+    D120      Round 0.025+
+    D154      Round 6.000 Hole diameter 3.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\L3 - Copper Power.G3L.gbr
+    Plot Name:       L3 - Copper Power.G3L
+
+    Contains:        Power
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D10      Round 0.150
+    D11      Round 0.600 Hole diameter 0.250
+    D17      Round 0.900 Hole diameter 0.300
+    D86      Round 0.127
+    D115      Round 0.152+
+    D126      Round 1.400
+    D154      Round 6.000 Hole diameter 3.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Silkscreen Bottom.GBO.gbr
+    Plot Name:       Silkscreen Bottom.GBO
+
+    Contains:        Silkscreen Bottom
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D86      Round 0.127
+    D92      Round 0.200
+    D94      Round 0.000+
+    D117      Round 0.305-
+    D196      Round 0.100
+
+    Gerber Output
+    -------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Outline.GKO.gbr
+    Plot Name:       Outline.GKO
+
+    Contains:        Silkscreen Top
+
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    D-Code   Description
+
+    D117      Round 0.305-
+
+    Excellon Drill Output
+    ---------------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Through Hole Unplated.drl
+    Plot Name:       <Through Hole> Unplated
+
+    Contains:        <Through Hole>         Unplated
+
+    Drill Type:      Unplated
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    Format     1
+    FMAT statement included in output.
+    Tool sizes included in output.
+
+    Tool          Size     Count  Plated
+
+    T001         00.05512     2     
+
+    Excellon Drill Output
+    ---------------------
+
+    Output File:     X:\Personal\Amiga1200Plus\RamExpansion\RamBo 1Mx4\Through Hole.drl
+    Plot Name:       <Through Hole>
+
+    Contains:        <Through Hole>         Plated
+
+    Drill Type:      Plated
+    Scale:           1.000
+    Mirrored:        No
+    Rotated:         No
+    Offset:          -517.800    -602.900mm
+    Step & Repeat:   Not used
+
+
+    Format     1
+    FMAT statement included in output.
+    Tool sizes included in output.
+
+    Tool          Size     Count  Plated
+
+    T001         00.00984   266     Y
+    T002         00.01181     9     Y
+    T003         00.12205     1     Y
+
+Summary Information
+-------------------
+
+    Outputs covered by CAM Plots
+    ----------------------------
+
+    L1 - Copper Top.GTL: Gerber, Artwork, Enabled
+    L2 - Copper GND.G2L: Gerber, Artwork, Enabled
+    L4 - Copper Bottom.GBL: Gerber, Artwork, Enabled
+    Silkscreen Top.GTO: Gerber, Artwork, Enabled
+    Solder Mask Top.GTS: Gerber, Artwork, Enabled
+    Solder Mask Bottom.GBS: Gerber, Artwork, Enabled
+    <Through Hole> Unplated: Excellon, Drill, Enabled
+    <Through Hole>: Excellon, Drill, Enabled
+    L3 - Copper Power.G3L: Gerber, Artwork, Enabled
+    Silkscreen Bottom.GBO: Gerber, Artwork, Enabled
+    Outline.GKO: Gerber, Artwork, Enabled
+
+    Outputs not covered by CAM Plots
+    --------------------------------
+
+    Layer Assembly
+    Layer Solder Paste Top
+
+                ---------------- End Of Report ----------------
